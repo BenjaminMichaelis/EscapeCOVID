@@ -1,7 +1,5 @@
 # EscapeCOVID
 
-https://img.shields.io/github/stars/BenjaminMichaelis/EscapeCOVID
-
 CPTS122-01
 
 Benjamin Michaelis<br />
