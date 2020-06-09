@@ -1,6 +1,6 @@
 # EscapeCOVID
 
-/appveyor/build/:user/:repo
+https://img.shields.io/github/stars/BenjaminMichaelis/EscapeCOVID
 
 CPTS122-01
 
