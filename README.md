@@ -1,5 +1,7 @@
 # EscapeCOVID
 
+/appveyor/build/:user/:repo
+
 CPTS122-01
 
 Benjamin Michaelis
