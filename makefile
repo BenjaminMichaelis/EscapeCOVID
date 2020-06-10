@@ -1,4 +1,6 @@
-# PLEASE FOLLOW THE FORMAT BELOW:
+# PLEASE FOLLOW THE FORMAT BELOW TO MAKE A BASIC makefile USING GNU MAKE:
+# Reference@ https://www.gnu.org/software/make/manual/make.html#Variables-Simplify
+
 # all object files (ending with *.o) are encapsulated in the "objects" field. Just keep adding after main.o in order.
 objects = main.o #praphicsui.o etc.
 
