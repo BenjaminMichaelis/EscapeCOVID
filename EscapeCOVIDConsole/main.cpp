@@ -8,5 +8,8 @@
 int main() 
 {
     printf("blah");
+    
+    testUI();
+
     return 0;
 }
