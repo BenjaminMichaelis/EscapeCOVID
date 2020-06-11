@@ -12,7 +12,7 @@ APPNAME = EscapeCOVIDGame
 EXT = .cpp
 SRCDIR = .
 BIN = bin
-OBJDIR = obj
+OBJDIR = .
 
 ############## Do not change anything from here downwards! #############
 SRC = $(wildcard $(SRCDIR)/*$(EXT))
@@ -35,11 +35,7 @@ WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 
 all: $(APPNAME)
 
-$(OBJDIR) :
-	mkdir $@
 
-$(BIN) :
-	mkdir $@
 # Builds the app
 $(APPNAME): $(OBJ)
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
