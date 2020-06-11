@@ -11,6 +11,7 @@ LDFLAGS =
 APPNAME = EscapeCOVIDGame
 EXT = .cpp
 SRCDIR = .
+BIN = bin
 OBJDIR = obj
 
 ############## Do not change anything from here downwards! #############
@@ -34,8 +35,13 @@ WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 
 all: $(APPNAME)
 
+$(OBJ) :
+	mkdir $@
+
+$(BIN) :
+	mkdir $@
 # Builds the app
-$(APPNAME): $(OBJ)
+$(APPNAME): | $(OBJ) $(BIN)
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Creates the dependecy rules
