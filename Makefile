@@ -5,6 +5,7 @@
 .PHONY = all clean
 
 APPNAME = EscapeCOVIDConsole
+SFML_FLAGS = -lsfml-graphics -lsfml-window -lsfml-system
 
 all: subsystem
 
