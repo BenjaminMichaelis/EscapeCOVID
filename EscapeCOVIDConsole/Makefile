@@ -41,7 +41,7 @@ $(OBJDIR) :
 $(BIN) :
 	mkdir $@
 # Builds the app
-$(APPNAME): | $(OBJ) $(BIN)
+$(APPNAME): $(OBJ)
 	$(CC) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 
 # Creates the dependecy rules
