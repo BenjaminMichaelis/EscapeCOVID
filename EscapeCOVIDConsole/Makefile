@@ -35,8 +35,8 @@ WDELOBJ = $(SRC:$(SRCDIR)/%$(EXT)=$(OBJDIR)\\%.o)
 
 all: $(APPNAME)
 
-$(OBJ) :
-	mkdir $@
+$(OBJDIR) :
+	mkdir $(OBJ)
 
 $(BIN) :
 	mkdir $@
