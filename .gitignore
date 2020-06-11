@@ -365,3 +365,9 @@ EscapeCOVIDConsole/main.d
 EscapeCOVIDConsole/obj/main.o
 
 vc140.pdb
+
+
+#Visual Studio Files
+*.sln
+*.vcxproj
+*.vcxproj.filters
