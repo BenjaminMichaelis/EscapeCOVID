@@ -1,0 +1,72 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "clean",
+            "command": "rm",
+            "args": [
+                "${workspaceFolder}/bin/EscapeCOVIDConsole"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "Create Bin Directory",
+            "command": "mkdir",
+            "args": [
+                "${workspaceFolder}/bin"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: g++ build active file",
+            "dependsOrder": "sequence",
+            "command": "g++",
+            "args": [
+                "-g",
+                "*.cpp",
+                "-o",
+                "${workspaceFolder}/bin/EscapeCOVIDConsole"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "C/C++: g++ build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                //"-Wall",
+                //"-Wextra",
+                //"-Wconversion", //conversion error
+                "-g",
+                "${workspaceFolder}/*.cpp",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}"//"${fileDirname}/a.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
