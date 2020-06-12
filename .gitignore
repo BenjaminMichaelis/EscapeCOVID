@@ -371,3 +371,5 @@ vc140.pdb
 *.sln
 *.vcxproj
 *.vcxproj.filters
+
+*.o
