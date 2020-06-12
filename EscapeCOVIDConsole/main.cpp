@@ -18,9 +18,10 @@ int main()
 
 	srand(time(NULL));
 
+	Graphics W1;
 
+	W1.createWindow();
 
-    createWindow();
 
     return 0;
 }

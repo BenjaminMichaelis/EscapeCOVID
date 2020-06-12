@@ -3,6 +3,23 @@
 
 #include <SFML/Graphics.hpp>
 
-void createWindow();
+class Graphics
+{
+private:
+	sf::Texture virusTexture;
+	sf::Texture playerTexture;
+
+	sf::Sprite virus;
+	sf::Sprite player;
+
+public:
+
+	Graphics();
+
+	void createWindow();
+
+};
+
+
 
 #endif
