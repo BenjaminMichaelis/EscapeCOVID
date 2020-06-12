@@ -1,20 +1,12 @@
-#include "Window.h"
-#include "Sprites.h"
-
-
+#include "Graphics.h"
 
 Graphics::Graphics()
 {
 	virusTexture.loadFromFile("images/virus.png");//load virus texture
 	playerTexture.loadFromFile("images/player.png");//load player texture
 
-	//sf::Sprite virus(virusTexture);//build virus sprite
-
-	virus.setTexture(virusTexture);
-
-	//sf::Sprite player(playerTexture); //build player sprite
-
-	player.setTexture(playerTexture);
+	virus.setTexture(virusTexture);//set texture to sprite
+	player.setTexture(playerTexture);//set texture to sprite
 
 	//POSITION OF SPRITES
 	virus.setPosition(100, 100);
@@ -24,17 +16,19 @@ Graphics::Graphics()
 	player.setPosition(130, 39); //about the middle at the bottom
 }
 
-void Graphics::createWindow()//right now this function just opens a window and waits for it to be closed
+void Graphics::createWindow()//right now this function just opens a window, adds the sprites, and waits to be closed
 {
-	sf::RenderWindow window(sf::VideoMode(300, 300), "EscapeCOVID SFML C++");
+	sf::RenderWindow window(sf::VideoMode(300, 300), "EscapeCOVID SFML C++");//build window
 
-	window.setFramerateLimit(30);
+	window.clear(sf::Color(127, 127, 127, 127));//sets window color to grey, also clears window
 
-	window.draw(virus);
+	window.setFramerateLimit(30);//set framerate
 
-	window.draw(player);
+	window.draw(virus);//draw virus
 
-	window.display();
+	window.draw(player);//draw player
+
+	window.display();//display frame
 
 	sf::Event event;//!!!this and the loops below will probably want to live in the function that runs the main game!!!
 
