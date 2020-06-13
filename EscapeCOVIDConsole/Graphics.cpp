@@ -11,7 +11,7 @@ Graphics::Graphics()
 	//POSITION OF SPRITES
 	virus.setPosition(100, 100);
 
-	//if window is 300x400, want to start player here
+	//if window is 300x300, want to start player here
 
 	player.setPosition(130, 39); //about the middle at the bottom
 }
@@ -32,7 +32,7 @@ void Graphics::createWindow()//right now this function just opens a window, adds
 
 	sf::Event event;//!!!this and the loops below will probably want to live in the function that runs the main game!!!
 
-	while (window.isOpen())//
+	while (window.isOpen())
 	{
 		while (window.pollEvent(event))//this loop waits for the window to be closed
 		{

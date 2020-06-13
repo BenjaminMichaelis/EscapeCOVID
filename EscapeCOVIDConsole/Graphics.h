@@ -12,6 +12,7 @@ private:
 	sf::Sprite virus;//initialize virus sprite
 	sf::Sprite player;//initialize player sprite
 
+	sf::RenderWindow window;//build window
 
 public:
 
