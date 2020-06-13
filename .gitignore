@@ -341,3 +341,12 @@ healthchecksdb
 
 #Ignore Users Files
 *.d
+*.o
+
+#Visual Studio Files
+#*.sln
+#*.vcxproj
+#*.vcxproj.filters
+
+EscapeCOVIDGame
+
