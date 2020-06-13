@@ -22,7 +22,7 @@ CPTS122-01
 
 Benjamin Michaelis<br />
 Jared Campbell<br />
-Teddie Havanec<br />
+Teddie Hovanec<br />
 Karl Norden<br />
 
 
