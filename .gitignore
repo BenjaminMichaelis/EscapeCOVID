@@ -341,36 +341,12 @@ healthchecksdb
 
 #Ignore Users Files
 *.d
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/.suo
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/Browse.VC.db
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/Browse.VC.db-shm
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/Browse.VC.db-wal
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/Browse.VC.opendb
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/ipch/AutoPCH/fd892d7f922db58/MAIN.ipch
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/TestStore/0/000.testlog
-
-.vs/PA6_GraphicProject-EscapeCovid/v16/TestStore/0/testlog.manifest
-
-EscapeCOVIDConsole/EscapeCOVIDConsole.vcxproj.user
-
-EscapeCOVIDConsole/main.d
-
-EscapeCOVIDConsole/obj/main.o
-
-vc140.pdb
-
+*.o
 
 #Visual Studio Files
-*.sln
-*.vcxproj
-*.vcxproj.filters
+#*.sln
+#*.vcxproj
+#*.vcxproj.filters
 
-*.o
 EscapeCOVIDGame
+
