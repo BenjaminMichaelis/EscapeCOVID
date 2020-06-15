@@ -1,10 +1,11 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
 
 #include <SFML/Graphics.hpp>
 #include "rootheader.h"
 #include "playerObj.h"
 #include "virusObj.h"
+#include <string>
 
 using namespace sf;
 
@@ -14,6 +15,8 @@ private:
 
     Event gameEvent;
 
+
+	sf::Font font;
 
 public:
     RenderWindow window;//build window

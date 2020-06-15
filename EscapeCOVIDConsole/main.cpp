@@ -7,6 +7,8 @@
 #include "Graphics.h"
 #include "playerObj.h"
 #include "virusObj.h"
+#include "Score.h"
+
 #include <iostream>
 
 

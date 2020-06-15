@@ -1,4 +1,5 @@
 #include "Graphics.h"
+#include "Score.h"
 
 
 
@@ -17,12 +18,9 @@ void Graphics::createWindow()//right now this function just opens a window, adds
 
     window.setFramerateLimit(60);//set framerate
 
-    //window.draw(virus);//draw virus
-
-    //window.draw(player);//draw player
-
+	player.setPosition(130, 39); //about the middle at the bottom
     window.display();//display frame
-
+	font.loadFromFile("Tuffy.ttf");
 }
 
 void Graphics::displayMovements()
@@ -38,6 +36,7 @@ void Graphics::displayMovements()
     window.display();
 }
 
+	sf::Text text("", font);//initialize clock text for window
 void Graphics::closeWindow()
 {
 
@@ -49,4 +48,8 @@ void Graphics::closeWindow()
                 window.close();
             }
         }
+	text.setFillColor(sf::Color::White);//set text color
+	Score S1;//create score object
+		text.setString(std::to_string(S1.updateScore()));//set score text to current score
+		window.draw(text);//draw store
 }
