@@ -4,18 +4,8 @@
 
 Graphics::Graphics()
 {
-    virusTexture.loadFromFile("images/virus.png");//load virus texture
-    playerTexture.loadFromFile("images/player.png");//load player texture
-
-    virus.setTexture(virusTexture);//set texture to sprite
-    player.setTexture(playerTexture);//set texture to sprite
-
-    //POSITION OF SPRITES
-    virus.setPosition(100, 100);
-
-    //if window is 300x300, want to start player here
-
-    player.setPosition(130, 39); //about the middle at the bottom
+    virus01.CreateVirusOBJ(player);
+    virus02.CreateVirusOBJ(player);
 }
 
 void Graphics::createWindow()//right now this function just opens a window, adds the sprites, and waits to be closed
@@ -33,6 +23,19 @@ void Graphics::createWindow()//right now this function just opens a window, adds
 
     window.display();//display frame
 
+}
+
+void Graphics::displayMovements()
+{
+    // display movement changes:
+    window.clear();
+
+    window.draw(virus01.getSprite());
+    window.draw(virus02.getSprite());
+
+    window.draw(player.getSprite());
+
+    window.display();
 }
 
 void Graphics::closeWindow()

@@ -12,6 +12,8 @@ class VirusOBJ : public PlayerOBJ {
     VirusOBJ();
     VirusOBJ(PlayerOBJ &);
 
+    void CreateVirusOBJ(PlayerOBJ& player);
+
     // auto-movement for the virus:
     void autoMovement();
 

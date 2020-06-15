@@ -30,6 +30,25 @@ VirusOBJ::VirusOBJ(PlayerOBJ &player) {
     objSprite.move(dx, dy);
 }
 
+void VirusOBJ::CreateVirusOBJ(PlayerOBJ& player) {
+    // load up virus's texture
+    objTexture.loadFromFile("images/virus.png");
+    objSprite.setTexture(objTexture);
+    objSprite.setPosition(PLAYER_DEFAULT_X, PLAYER_DEFAULT_Y);
+
+    // get the initial position:
+    playerPos = player.getSprite().getPosition();
+    int x, y;
+    while (getSprite().getPosition() == playerPos) {
+        x = rand() % FRAME_WIDTH;
+        y = rand() % FRAME_LENGTH;
+
+        objSprite.setPosition(float(x), float(y));
+    }
+
+    dx = dy = DEFAULT_SPEED;
+    objSprite.move(dx, dy);
+
 // auto-movement for the virus:
 void VirusOBJ::autoMovement() {
     // get virus position:

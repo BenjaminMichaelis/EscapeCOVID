@@ -3,30 +3,31 @@
 
 #include <SFML/Graphics.hpp>
 #include "rootheader.h"
+#include "../project_experimental/playerObj.h"
+#include "../project_experimental/virusObj.h"
 
 using namespace sf;
 
 class Graphics
 {
 private:
-    Texture virusTexture;//initialize virus texture
-    Texture playerTexture;//initialize player texture
-
-    Sprite virus;//initialize virus sprite
-    Sprite player;//initialize player sprite
-
     RenderWindow window;//build window
 
     Event gameEvent;//!!!this and the loops below will probably want to live in the function that runs the main game!!!
 
 
 public:
+    static PlayerOBJ player;
+
+    VirusOBJ virus01;
+    VirusOBJ virus02;
 
     Graphics();//constructor loads textures and adds them to the sprites
 
     void createWindow();
 
     void closeWindow();
+    void displayMovements();
 
 };
 
