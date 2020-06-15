@@ -6,6 +6,7 @@
 class VirusOBJ : public PlayerOBJ {
   protected:
     PlayerOBJ *playerPos;
+    float dx, dy;
 
   public:
     // constructor (virus must be created with reference to the player):

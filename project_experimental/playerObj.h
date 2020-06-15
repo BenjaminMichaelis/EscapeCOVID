@@ -6,7 +6,7 @@ class PlayerOBJ {
   protected:
     sf::Texture objTexture;
     sf::Sprite objSprite;
-    float speed, dx, dy;
+    float speed;
     sf::Vector2f pos;
 
   public:
