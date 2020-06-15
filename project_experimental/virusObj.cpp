@@ -1,5 +1,14 @@
 #include "virusObj.h"
 
+// virus default constructor:
+VirusOBJ::VirusOBJ() {
+    objTexture.loadFromFile("images/virus.png");
+    objSprite.setTexture(objTexture);
+    playerPos.x = PLAYER_DEFAULT_X;
+    playerPos.y = PLAYER_DEFAULT_Y;
+    objSprite.setPosition(playerPos);
+}
+
 // virus constructor:
 VirusOBJ::VirusOBJ(PlayerOBJ &player) {
     // load up virus's texture
@@ -7,10 +16,9 @@ VirusOBJ::VirusOBJ(PlayerOBJ &player) {
     objSprite.setTexture(objTexture);
     objSprite.setPosition(PLAYER_DEFAULT_X, PLAYER_DEFAULT_Y);
 
-    // set
-    sf::Vector2f playerPos = player.getSprite().getPosition();
-
-    int x = 0, y = 0;
+    // get the initial position:
+    playerPos = player.getSprite().getPosition();
+    int x, y;
     while (getSprite().getPosition() == playerPos) {
         x = rand() % FRAME_WIDTH;
         y = rand() % FRAME_LENGTH;
@@ -18,7 +26,7 @@ VirusOBJ::VirusOBJ(PlayerOBJ &player) {
         objSprite.setPosition(float(x), float(y));
     }
 
-    dx = dy = float(DEFAULT_SPEED);
+    dx = dy = DEFAULT_SPEED;
     objSprite.move(dx, dy);
 }
 
@@ -31,6 +39,7 @@ void VirusOBJ::autoMovement() {
     static int FRAMEX = FRAME_WIDTH - VIRUS_SIZE;
     static int FRAMEY = FRAME_LENGTH - VIRUS_SIZE;
 
+    // bounce-back behaviors when hitting walls for the virus object:
     if (pos.x < 0) {
         dx = DEFAULT_SPEED;
         dy = randSpeed(DEFAULT_SPEED);

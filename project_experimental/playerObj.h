@@ -6,7 +6,7 @@ class PlayerOBJ {
   protected:
     sf::Texture objTexture;
     sf::Sprite objSprite;
-    float speed;
+    float dx, dy;
     sf::Vector2f pos;
 
   public:
@@ -14,7 +14,7 @@ class PlayerOBJ {
     PlayerOBJ();
     // return the loaded Sprite asset:
     sf::Sprite getSprite();
-    
+
     // player-controlled movements:
     void moveLeft();
     void moveRight();

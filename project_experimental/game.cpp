@@ -13,13 +13,14 @@ void gameInstance() {
 
     // create new objects for player and virus,
     // all virus object at creation must be given a reference to the player.
-    PlayerOBJ player;
-    VirusOBJ virus(player);
+    static PlayerOBJ player;
+
+    
+    VirusOBJ virus01(player);
+    VirusOBJ virus02(player);
 
     // start a game event
     sf::Event gameEvent;
-
-    sf::Vector2f playerPos, virusPos;
 
     // run the game while gameWindow stays open:
     while (gameWindow.isOpen()) {
@@ -46,12 +47,18 @@ void gameInstance() {
         }
 
         // virus auto-movement:
-        virus.autoMovement();
+        virus01.autoMovement();
+        virus02.autoMovement();
+       
 
         // display movement changes:
         gameWindow.clear();
-        gameWindow.draw(virus.getSprite());
+        
+        gameWindow.draw(virus01.getSprite());
+        gameWindow.draw(virus02.getSprite());
+
         gameWindow.draw(player.getSprite());
+
         gameWindow.display();
     }
 }

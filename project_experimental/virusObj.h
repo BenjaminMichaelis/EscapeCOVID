@@ -5,13 +5,13 @@
 
 class VirusOBJ : public PlayerOBJ {
   protected:
-    PlayerOBJ *playerPos;
-    float dx, dy;
+    sf::Vector2f playerPos;
 
   public:
     // constructor (virus must be created with reference to the player):
+    VirusOBJ();
     VirusOBJ(PlayerOBJ &);
-    
+
     // auto-movement for the virus:
     void autoMovement();
 
