@@ -10,7 +10,8 @@ VirusOBJ::VirusOBJ() {
 }
 
 // virus constructor:
-VirusOBJ::VirusOBJ(PlayerOBJ &player) {
+VirusOBJ::VirusOBJ(PlayerOBJ &player) 
+{
     // load up virus's texture
     objTexture.loadFromFile("images/virus.png");
     objSprite.setTexture(objTexture);
@@ -19,7 +20,8 @@ VirusOBJ::VirusOBJ(PlayerOBJ &player) {
     // get the initial position:
     playerPos = player.getSprite().getPosition();
     int x, y;
-    while (getSprite().getPosition() == playerPos) {
+    while (getSprite().getPosition() == playerPos) 
+    {
         x = rand() % FRAME_WIDTH;
         y = rand() % FRAME_LENGTH;
 
@@ -30,7 +32,8 @@ VirusOBJ::VirusOBJ(PlayerOBJ &player) {
     objSprite.move(dx, dy);
 }
 
-void VirusOBJ::CreateVirusOBJ(PlayerOBJ& player) {
+void VirusOBJ::CreateVirusOBJ(PlayerOBJ& player) 
+{
     // load up virus's texture
     objTexture.loadFromFile("images/virus.png");
     objSprite.setTexture(objTexture);
@@ -39,7 +42,8 @@ void VirusOBJ::CreateVirusOBJ(PlayerOBJ& player) {
     // get the initial position:
     playerPos = player.getSprite().getPosition();
     int x, y;
-    while (getSprite().getPosition() == playerPos) {
+    while (getSprite().getPosition() == playerPos) 
+    {
         x = rand() % FRAME_WIDTH;
         y = rand() % FRAME_LENGTH;
 
@@ -51,7 +55,8 @@ void VirusOBJ::CreateVirusOBJ(PlayerOBJ& player) {
 }
 
 // auto-movement for the virus:
-void VirusOBJ::autoMovement() {
+void VirusOBJ::autoMovement() 
+{
     // get virus position:
     pos = objSprite.getPosition();
     
@@ -60,22 +65,26 @@ void VirusOBJ::autoMovement() {
     static int FRAMEY = FRAME_LENGTH - VIRUS_SIZE;
 
     // bounce-back behaviors when hitting walls for the virus object:
-    if (pos.x < 0) {
+    if (pos.x < 0) 
+    {
         dx = DEFAULT_SPEED;
         dy = randSpeed(DEFAULT_SPEED);
     }
 
-    if (pos.x > float(FRAMEX)) {
+    if (pos.x > float(FRAMEX)) 
+    {
         dx = -DEFAULT_SPEED;
         dy = randSpeed(DEFAULT_SPEED);
     }
 
-    if (pos.y < 0) {
+    if (pos.y < 0) 
+    {
         dx = randSpeed(DEFAULT_SPEED);
         dy = DEFAULT_SPEED;
     }
 
-    if (pos.y > float(FRAMEY)) {
+    if (pos.y > float(FRAMEY)) 
+    {
         dx = randSpeed(DEFAULT_SPEED);
         dy = -DEFAULT_SPEED;
     }
@@ -84,7 +93,8 @@ void VirusOBJ::autoMovement() {
 }
 
 // randomize and return a floating-point speed:
-float randSpeed(int speedMod) {
+float randSpeed(int speedMod) 
+{
     bool reverse = rand() % 2;
     float fSpeed = static_cast<float> (rand() % (DEFAULT_SPEED + speedMod));
     if (reverse) return fSpeed;

@@ -1,8 +1,6 @@
 #include "Graphics.h"
 #include "Score.h"
 
-
-
 Graphics::Graphics()
 {
     virus01.CreateVirusOBJ(player);
@@ -40,7 +38,6 @@ void Graphics::displayMovements()
 
 void Graphics::closeWindow()
 {
-
         // terminate the game if window is closed:
         while (window.pollEvent(gameEvent)) 
         {
