@@ -28,7 +28,7 @@ void Graphics::createWindow()//right now this function just opens a window, adds
 void Graphics::displayMovements()
 {
     // display movement changes:
-    window.clear();
+    window.clear(Color(127, 127, 127, 127));
 
     window.draw(virus01.getSprite());
     window.draw(virus02.getSprite());
