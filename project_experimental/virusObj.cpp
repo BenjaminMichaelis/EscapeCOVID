@@ -23,7 +23,7 @@ VirusOBJ::VirusOBJ(PlayerOBJ &player) {
 }
 
 // auto-movement for the virus:
-void VirusOBJ::movement() {
+void VirusOBJ::autoMovement() {
     // get virus position:
     pos = objSprite.getPosition();
     

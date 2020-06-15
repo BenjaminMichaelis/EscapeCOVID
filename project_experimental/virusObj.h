@@ -12,7 +12,7 @@ class VirusOBJ : public PlayerOBJ {
     VirusOBJ(PlayerOBJ &);
     
     // auto-movement for the virus:
-    void movement();
+    void autoMovement();
 
     // destructor:
     ~VirusOBJ() { delete this; }

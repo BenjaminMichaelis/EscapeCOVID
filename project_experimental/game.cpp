@@ -9,7 +9,7 @@ void gameInstance() {
 
     // set basic window aesthetics:
     gameWindow.clear(sf::Color(127, 127, 127, 127));
-    gameWindow.setFramerateLimit(30);
+    gameWindow.setFramerateLimit(60);
 
     // create new objects for player and virus,
     // all virus object at creation must be given a reference to the player.
@@ -46,7 +46,7 @@ void gameInstance() {
         }
 
         // virus auto-movement:
-        virus.movement();
+        virus.autoMovement();
 
         // display movement changes:
         gameWindow.clear();
