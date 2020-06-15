@@ -20,6 +20,8 @@ private:
     Text text;
     sf::Font font;
 
+	sf::Font font;
+
 public:
     RenderWindow window;//build window
     PlayerOBJ player;
