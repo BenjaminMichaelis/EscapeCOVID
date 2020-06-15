@@ -155,10 +155,12 @@
   <ItemGroup>
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Movements.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rootheader.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Sprites.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
@@ -167,6 +169,6 @@
     <DLLs Include="$(ProjectDir)SFML\bin\windows\*.dll" />
   </ItemGroup>
   <Target Name="AfterBuild">
-    <Copy SourceFiles="@(DLLs)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true"/>
+    <Copy SourceFiles="@(DLLs)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>
 </Project>

@@ -21,6 +21,9 @@
     <ClCompile Include="Graphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Movements.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rootheader.h">
@@ -29,18 +32,8 @@
     <ClInclude Include="Graphics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="SFML\bin\windows\openal32.dll" />
-    <None Include="SFML\bin\windows\sfml-audio-2.dll" />
-    <None Include="SFML\bin\windows\sfml-audio-d-2.dll" />
-    <None Include="SFML\bin\windows\sfml-graphics-2.dll" />
-    <None Include="SFML\bin\windows\sfml-graphics-d-2.dll" />
-    <None Include="SFML\bin\windows\sfml-network-2.dll" />
-    <None Include="SFML\bin\windows\sfml-network-d-2.dll" />
-    <None Include="SFML\bin\windows\sfml-system-2.dll" />
-    <None Include="SFML\bin\windows\sfml-system-d-2.dll" />
-    <None Include="SFML\bin\windows\sfml-window-2.dll" />
-    <None Include="SFML\bin\windows\sfml-window-d-2.dll" />
+    <ClInclude Include="Sprites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
