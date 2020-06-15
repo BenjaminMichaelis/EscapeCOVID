@@ -4,11 +4,10 @@
 #include <iostream>
 #include <time.h>
 
-
 using namespace std;
 using namespace sf;
 
-
+// base dimensions for player sprite:
 const int PLAYER_W = 15;
 const int PLAYER_H = 26;
 

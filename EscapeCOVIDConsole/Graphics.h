@@ -1,24 +1,38 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
 
 #include <SFML/Graphics.hpp>
+#include "rootheader.h"
+#include "playerObj.h"
+#include "virusObj.h"
+#include "Score.h"
+#include <string>
+
+using namespace sf;
 
 class Graphics
 {
 private:
-	sf::Texture virusTexture;//initialize virus texture
-	sf::Texture playerTexture;//initialize player texture
 
-	sf::Sprite virus;//initialize virus sprite
-	sf::Sprite player;//initialize player sprite
+    Event gameEvent;
 
-	sf::RenderWindow window;//build window
+    Score S1;//create score object
+    Text text;
+    Font font;
 
 public:
+    RenderWindow window;//build window
+    PlayerOBJ player;
 
-	Graphics();//constructor loads textures and adds them to the sprites
+    VirusOBJ virus01;
+    VirusOBJ virus02;
 
-	void createWindow();
+    Graphics();//constructor loads textures and adds them to the sprites
+
+    void createWindow();
+
+    void closeWindow();
+    void displayMovements();
 
 };
 

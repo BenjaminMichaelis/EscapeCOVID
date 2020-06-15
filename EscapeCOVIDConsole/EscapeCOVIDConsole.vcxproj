@@ -153,20 +153,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Movements.cpp" />
+    <ClCompile Include="Score.cpp" />
+    <ClCompile Include="playerObj.cpp" />
+    <ClCompile Include="virusObj.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="rootheader.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="playerObj.h" />
+    <ClInclude Include="rootheader.h" />
     <ClInclude Include="Sprites.h" />
+    <ClInclude Include="virusObj.h" />
+    <ClInclude Include="Score.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ItemGroup>
     <DLLs Include="$(ProjectDir)SFML\bin\windows\*.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Tuffy.ttf" />
   </ItemGroup>
   <Target Name="AfterBuild">
     <Copy SourceFiles="@(DLLs)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
