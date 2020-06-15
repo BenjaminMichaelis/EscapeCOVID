@@ -15,7 +15,7 @@ void Graphics::createWindow()//right now this function just opens a window, adds
 
     window.clear(Color(127, 127, 127, 127));//sets window color to grey, also clears window
 
-    window.setFramerateLimit(30);//set framerate
+    window.setFramerateLimit(60);//set framerate
 
     //window.draw(virus);//draw virus
 
