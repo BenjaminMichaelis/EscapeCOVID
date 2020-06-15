@@ -153,11 +153,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\project_experimental\game.cpp" />
+    <ClCompile Include="..\project_experimental\main.cpp" />
+    <ClCompile Include="..\project_experimental\playerObj.cpp" />
+    <ClCompile Include="..\project_experimental\virusObj.cpp" />
     <ClCompile Include="Graphics.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Movements.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\project_experimental\playerObj.h" />
+    <ClInclude Include="..\project_experimental\rootheader.h" />
+    <ClInclude Include="..\project_experimental\virusObj.h" />
     <ClInclude Include="rootheader.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="Sprites.h" />
