@@ -24,13 +24,16 @@
     <ClCompile Include="playerObj.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Graphics.cpp">
+    <!-- <ClCompile Include="Graphics.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
+    </ClCompile> -->
     <ClCompile Include="Score.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="virusObj.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,9 +44,9 @@
     <ClInclude Include="Sprites.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics.h">
+    <!-- <ClInclude Include="Graphics.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
+    </ClInclude> -->
     <ClInclude Include="Score.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,6 +54,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="virusObj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

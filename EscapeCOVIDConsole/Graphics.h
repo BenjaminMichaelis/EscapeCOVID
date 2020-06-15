@@ -5,6 +5,7 @@
 #include "rootheader.h"
 #include "playerObj.h"
 #include "virusObj.h"
+#include "Score.h"
 #include <string>
 
 using namespace sf;
@@ -15,8 +16,9 @@ private:
 
     Event gameEvent;
 
-
-	sf::Font font;
+    Score S1;//create score object
+    Text text;
+    sf::Font font;
 
 public:
     RenderWindow window;//build window

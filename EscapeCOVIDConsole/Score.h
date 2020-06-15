@@ -7,14 +7,14 @@
 
 class Score
 {
-	private:
-		clock_t score;//score is a time
+    private:
+        clock_t score;//score is a time
 
-	public:
+    public:
 
-		Score();//score constructor
+        Score();//score constructor
 
-		int updateScore();//update score
+        int updateScore();//update score
 
 };
 
