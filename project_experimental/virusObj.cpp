@@ -36,16 +36,16 @@ void VirusOBJ::autoMovement() {
     pos = objSprite.getPosition();
     
     // set map limits:
-    static int FRAMEX = FRAME_WIDTH - VIRUS_SIZE;
-    static int FRAMEY = FRAME_LENGTH - VIRUS_SIZE;
+    static int maxDimX = FRAME_WIDTH - VIRUS_SIZE;
+    static int maxDimY = FRAME_LENGTH - VIRUS_SIZE;
 
-    // bounce-back behaviors when hitting walls for the virus object:
+    // determine the bounce-back behaviors when hitting walls for the virus object:
     if (pos.x < 0) {
         dx = DEFAULT_SPEED;
         dy = randSpeed(DEFAULT_SPEED);
     }
 
-    if (pos.x > float(FRAMEX)) {
+    if (pos.x > float(maxDimX)) {
         dx = -DEFAULT_SPEED;
         dy = randSpeed(DEFAULT_SPEED);
     }
@@ -55,7 +55,7 @@ void VirusOBJ::autoMovement() {
         dy = DEFAULT_SPEED;
     }
 
-    if (pos.y > float(FRAMEY)) {
+    if (pos.y > float(maxDimY)) {
         dx = randSpeed(DEFAULT_SPEED);
         dy = -DEFAULT_SPEED;
     }

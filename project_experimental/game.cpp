@@ -1,5 +1,4 @@
 #include "playerObj.h"
-#include "rootheader.h"
 #include "virusObj.h"
 
 void gameInstance() {
@@ -12,14 +11,14 @@ void gameInstance() {
     gameWindow.setFramerateLimit(60);
 
     // create new objects for player and virus,
-    // all virus object at creation must be given a reference to the player.
+    // all virus objects at creation must be given a reference to the player.
     static PlayerOBJ player;
 
     
     VirusOBJ virus01(player);
     VirusOBJ virus02(player);
 
-    // start a game event
+    // start a game event:
     sf::Event gameEvent;
 
     // run the game while gameWindow stays open:
@@ -60,5 +59,6 @@ void gameInstance() {
         gameWindow.draw(player.getSprite());
 
         gameWindow.display();
+
     }
 }

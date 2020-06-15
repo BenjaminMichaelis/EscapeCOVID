@@ -18,4 +18,4 @@ virusObj.o: virusObj.cpp rootheader.h
 
 .PHONY: clean
 clean:
-	rm a $(OBJECTS)
+	del a $(OBJECTS)

@@ -4,10 +4,6 @@
 // Main execution file:
 // **************************************************************************************************************
 #include "rootheader.h"
-//#include "Graphics.h"
-#include "playerObj.h"
-#include "virusObj.h"
-#include <iostream>
 
 int main() {
     srand(static_cast<unsigned int>(time(NULL)));
