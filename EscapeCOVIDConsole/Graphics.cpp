@@ -13,7 +13,7 @@ void Graphics::createWindow()//right now this function just opens a window, adds
     window.create(VideoMode(FRAME_WIDTH, FRAME_LENGTH),
         "EscapeCOVID SFML C++");
     text.setFont(font);
-    window.clear(Color(127, 127, 127, 127));//sets window color to grey, also clears window
+    window.clear(Color(COLORRED, COLORGREEN, COLORBLUE, COLORALPHA));//sets window color to grey, also clears window
     text.setFillColor(sf::Color::White);//set text color
     window.setFramerateLimit(60);//set framerate
 
@@ -23,7 +23,7 @@ void Graphics::createWindow()//right now this function just opens a window, adds
 void Graphics::displayMovements()
 {
     // display movement changes:
-    window.clear(Color(127, 127, 127, 127));
+    window.clear(Color(COLORRED, COLORGREEN, COLORBLUE, COLORALPHA));
 
     window.draw(virus01.getSprite());
     window.draw(virus02.getSprite());

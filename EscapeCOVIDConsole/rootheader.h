@@ -26,6 +26,12 @@ const int PLAYER_DEFAULT_Y = 150;
 // default moving speed:
 const int DEFAULT_SPEED = 5;
 
+//WindowColors
+const int COLORRED = 127;
+const int COLORGREEN = 127;
+const int COLORBLUE = 127;
+const int COLORALPHA = 127;
+
 // execute a game instance:
 void gameInstance();
 
