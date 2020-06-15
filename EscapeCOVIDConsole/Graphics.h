@@ -18,9 +18,7 @@ private:
 
     Score S1;//create score object
     Text text;
-    sf::Font font;
-
-	sf::Font font;
+    Font font;
 
 public:
     RenderWindow window;//build window

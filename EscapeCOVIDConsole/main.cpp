@@ -5,27 +5,13 @@
 // **************************************************************************************************************
 #include "rootheader.h"
 #include "Graphics.h"
-#include "playerObj.h"
-#include "virusObj.h"
-#include "Score.h"
-
-#include <iostream>
 
 
 int main() 
 {
-    //declare variables
-    int score = 0;
-    float dx = 0, dy = 0, speed = 5;
-    dx = 0;
-    dy = 0;
-
     srand(time(NULL));
 
-
     gameInstance();
-
-
 
     return 0;
 }
