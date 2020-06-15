@@ -1,7 +1,8 @@
-#ifndef WINDOW_H
-#define WINDOW_H
+#ifndef GRAPHICS_H
+#define GRAPHICS_H
 
 #include <SFML/Graphics.hpp>
+#include <string>
 
 class Graphics
 {
@@ -13,6 +14,8 @@ private:
 	sf::Sprite player;//initialize player sprite
 
 	sf::RenderWindow window;//build window
+
+	sf::Font font;
 
 public:
 

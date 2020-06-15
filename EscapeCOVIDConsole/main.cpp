@@ -5,6 +5,8 @@
 // **************************************************************************************************************
 #include "rootheader.h"
 #include "Graphics.h"
+#include "Score.h"
+
 #include <iostream>
 
 

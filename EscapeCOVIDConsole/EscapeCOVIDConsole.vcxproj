@@ -155,10 +155,12 @@
   <ItemGroup>
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Score.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="rootheader.h" />
     <ClInclude Include="Graphics.h" />
+    <ClInclude Include="Score.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
@@ -166,7 +168,10 @@
   <ItemGroup>
     <DLLs Include="$(ProjectDir)SFML\bin\windows\*.dll" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Tuffy.ttf" />
+  </ItemGroup>
   <Target Name="AfterBuild">
-    <Copy SourceFiles="@(DLLs)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true"/>
+    <Copy SourceFiles="@(DLLs)" DestinationFolder="$(OutDir)" SkipUnchangedFiles="true" />
   </Target>
 </Project>
