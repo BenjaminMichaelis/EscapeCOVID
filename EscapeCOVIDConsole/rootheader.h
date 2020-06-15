@@ -1,10 +1,12 @@
 #ifndef ROOTHEADER_H
 #define ROOTHEADER_H
+#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <time.h>
 
 
 using namespace std;
+using namespace sf;
 
 
 const int PLAYER_W = 15;

@@ -5,8 +5,8 @@
 // **************************************************************************************************************
 #include "rootheader.h"
 #include "Graphics.h"
-#include "../project_experimental/playerObj.h"
-#include "../project_experimental/virusObj.h"
+#include "playerObj.h"
+#include "virusObj.h"
 #include <iostream>
 
 
@@ -22,8 +22,7 @@ int main()
 
 
     gameInstance();
-    /*Graphics W1;
-    W1.createWindow();*/
+
 
 
     return 0;

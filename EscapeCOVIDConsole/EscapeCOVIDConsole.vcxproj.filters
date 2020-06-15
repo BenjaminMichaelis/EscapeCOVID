@@ -19,18 +19,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Graphics.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\project_experimental\game.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="playerObj.cpp">
+      <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\project_experimental\playerObj.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="virusObj.cpp">
+      <Filter>Header Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\project_experimental\virusObj.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Window.cpp">
+    <ClCompile Include="game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,19 +35,16 @@
     <ClInclude Include="rootheader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Graphics.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Sprites.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\project_experimental\playerObj.h">
+    <ClInclude Include="Graphics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\project_experimental\virusObj.h">
+    <ClInclude Include="playerObj.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Window.h">
+    <ClInclude Include="virusObj.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

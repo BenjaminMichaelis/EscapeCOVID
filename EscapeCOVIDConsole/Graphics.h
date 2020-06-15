@@ -3,21 +3,21 @@
 
 #include <SFML/Graphics.hpp>
 #include "rootheader.h"
-#include "../project_experimental/playerObj.h"
-#include "../project_experimental/virusObj.h"
+#include "playerObj.h"
+#include "virusObj.h"
 
 using namespace sf;
 
 class Graphics
 {
 private:
-    RenderWindow window;//build window
 
-    Event gameEvent;//!!!this and the loops below will probably want to live in the function that runs the main game!!!
+    Event gameEvent;
 
 
 public:
-    static PlayerOBJ player;
+    RenderWindow window;//build window
+    PlayerOBJ player;
 
     VirusOBJ virus01;
     VirusOBJ virus02;

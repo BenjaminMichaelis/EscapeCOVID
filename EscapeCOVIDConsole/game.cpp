@@ -1,5 +1,7 @@
+#include "playerObj.h"
 #include "rootheader.h"
-#include "Graphics.h"
+#include "virusObj.h"
+#include "../EscapeCOVIDConsole/Graphics.h"
 
 void gameInstance() {
         Graphics W1;

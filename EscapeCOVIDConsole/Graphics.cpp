@@ -17,9 +17,9 @@ void Graphics::createWindow()//right now this function just opens a window, adds
 
     window.setFramerateLimit(30);//set framerate
 
-    window.draw(virus);//draw virus
+    //window.draw(virus);//draw virus
 
-    window.draw(player);//draw player
+    //window.draw(player);//draw player
 
     window.display();//display frame
 
@@ -40,11 +40,12 @@ void Graphics::displayMovements()
 
 void Graphics::closeWindow()
 {
-    // run the game while window stays open:
-    while (window.isOpen()) {
+
         // terminate the game if window is closed:
-        while (window.pollEvent(gameEvent)) {
-            if (gameEvent.type == Event::Closed) {
+        while (window.pollEvent(gameEvent)) 
+        {
+            if (gameEvent.type == Event::Closed) 
+            {
                 window.close();
             }
         }

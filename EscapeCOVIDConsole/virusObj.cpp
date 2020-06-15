@@ -48,6 +48,7 @@ void VirusOBJ::CreateVirusOBJ(PlayerOBJ& player) {
 
     dx = dy = DEFAULT_SPEED;
     objSprite.move(dx, dy);
+}
 
 // auto-movement for the virus:
 void VirusOBJ::autoMovement() {
