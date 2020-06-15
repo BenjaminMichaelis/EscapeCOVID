@@ -2,23 +2,31 @@
 #define WINDOW_H
 
 #include <SFML/Graphics.hpp>
+#include "rootheader.h"
+
+using namespace sf;
 
 class Graphics
 {
 private:
-	sf::Texture virusTexture;//initialize virus texture
-	sf::Texture playerTexture;//initialize player texture
+    Texture virusTexture;//initialize virus texture
+    Texture playerTexture;//initialize player texture
 
-	sf::Sprite virus;//initialize virus sprite
-	sf::Sprite player;//initialize player sprite
+    Sprite virus;//initialize virus sprite
+    Sprite player;//initialize player sprite
 
-	sf::RenderWindow window;//build window
+    RenderWindow window;//build window
+
+    Event gameEvent;//!!!this and the loops below will probably want to live in the function that runs the main game!!!
+
 
 public:
 
-	Graphics();//constructor loads textures and adds them to the sprites
+    Graphics();//constructor loads textures and adds them to the sprites
 
-	void createWindow();
+    void createWindow();
+
+    void closeWindow();
 
 };
 

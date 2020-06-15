@@ -153,14 +153,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\project_experimental\game.cpp" />
+    <ClCompile Include="..\project_experimental\playerObj.cpp" />
+    <ClCompile Include="..\project_experimental\virusObj.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Movements.cpp" />
+    <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\project_experimental\playerObj.h" />
+    <ClInclude Include="..\project_experimental\virusObj.h" />
     <ClInclude Include="rootheader.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="Sprites.h" />
+    <ClInclude Include="Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

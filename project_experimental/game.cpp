@@ -4,11 +4,11 @@
 
 void gameInstance() {
     // create a new game Window:
-    sf::RenderWindow gameWindow(sf::VideoMode(FRAME_WIDTH, FRAME_LENGTH),
+    RenderWindow gameWindow(VideoMode(FRAME_WIDTH, FRAME_LENGTH),
                                 "EscapeCOVID SFML C++");
 
     // set basic window aesthetics:
-    gameWindow.clear(sf::Color(127, 127, 127, 127));
+    gameWindow.clear(Color(127, 127, 127, 127));
     gameWindow.setFramerateLimit(60);
 
     // create new objects for player and virus,
@@ -19,30 +19,27 @@ void gameInstance() {
     VirusOBJ virus01(player);
     VirusOBJ virus02(player);
 
-    // start a game event
-    sf::Event gameEvent;
-
     // run the game while gameWindow stays open:
     while (gameWindow.isOpen()) {
         // terminate the game if window is closed:
         while (gameWindow.pollEvent(gameEvent)) {
-            if (gameEvent.type == sf::Event::Closed) {
+            if (gameEvent.type == Event::Closed) {
                 gameWindow.close();
             }
         }
 
         // main game loop, i.e. all movements and interactions go below this line:
         // player movement controls:
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+        if (Keyboard::isKeyPressed(Keyboard::Left)) {
             player.moveLeft();
         }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+        if (Keyboard::isKeyPressed(Keyboard::Right)) {
             player.moveRight();
         }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+        if (Keyboard::isKeyPressed(Keyboard::Up)) {
             player.moveUp();
         }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+        if (Keyboard::isKeyPressed(Keyboard::Down)) {
             player.moveDown();
         }
 

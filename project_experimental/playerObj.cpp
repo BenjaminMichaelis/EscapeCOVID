@@ -10,7 +10,7 @@ PlayerOBJ::PlayerOBJ() {
 }
 
 // return the Sprite variable:
-sf::Sprite PlayerOBJ::getSprite() { return objSprite; }
+Sprite PlayerOBJ::getSprite() { return objSprite; }
 
 // movement function: LEFT
 void PlayerOBJ::moveLeft() {

@@ -5,6 +5,7 @@
 #include <time.h>
 
 using namespace std;
+using namespace sf;
 
 // base dimensions for player sprite:
 const int PLAYER_W = 15;
