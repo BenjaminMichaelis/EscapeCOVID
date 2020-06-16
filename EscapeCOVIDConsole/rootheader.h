@@ -5,6 +5,7 @@
 #include <time.h>
 
 
+
 using namespace std;
 using namespace sf;
 
@@ -34,5 +35,6 @@ const int COLORALPHA = 127;
 
 // execute a game instance:
 void gameInstance();
+
 
 #endif

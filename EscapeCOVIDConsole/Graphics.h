@@ -10,6 +10,9 @@
 
 using namespace sf;
 
+enum VirusCreation { FirstVirus, SecondVirus = 300, ThirdVirus = 600, FourthVirus = 900, FifthVirus = 1200 };
+
+
 class Graphics
 {
 private:
@@ -26,13 +29,16 @@ public:
 
     VirusOBJ virus01;
     VirusOBJ virus02;
+    VirusOBJ virus03;
+    VirusOBJ virus04;
+    VirusOBJ virus05;
 
     Graphics();//constructor loads textures and adds them to the sprites
 
     void createWindow();
 
     void closeWindow();
-    void displayMovements();
+    void displayMovements(int VirusCreationTracker);
 
 };
 

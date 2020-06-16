@@ -3,7 +3,6 @@
 #include "virusObj.h"
 #include "Graphics.h"
 
-enum VirusCreation {FirstVirus, SecondVirus = 300, ThirdVirus = 600, FourthVirus = 900, FifthVirus = 1200};
 
 void gameInstance() {
         Graphics Window;
@@ -13,6 +12,7 @@ void gameInstance() {
         // run the game while window stays open:
         while (Window.window.isOpen())
         {
+
             if (VirusCreationTracker == FirstVirus)
             {
                 Window.virus01.CreateVirusOBJ(Window.player);
@@ -21,8 +21,20 @@ void gameInstance() {
             {
                 Window.virus02.CreateVirusOBJ(Window.player);
             }
-            Window.player.getSprite().getPosition().x;
-            Window.virus01.getSprite().getPosition().x;
+            if (VirusCreationTracker == ThirdVirus)
+            {
+                Window.virus03.CreateVirusOBJ(Window.player);
+            }
+            if (VirusCreationTracker == FourthVirus)
+            {
+                Window.virus04.CreateVirusOBJ(Window.player);
+            }
+            if (VirusCreationTracker == FifthVirus)
+            {
+                Window.virus05.CreateVirusOBJ(Window.player);
+            }
+            //Window.player.getSprite().getPosition().x;
+            //Window.virus01.getSprite().getPosition().x;
 
 
             Window.closeWindow();
@@ -42,11 +54,30 @@ void gameInstance() {
             }
 
             // virus auto-movement:
-            Window.virus01.autoMovement();
-            Window.virus02.autoMovement();
+            if (VirusCreationTracker >= FirstVirus)
+            {
+                Window.virus01.autoMovement();
+            }
+            if (VirusCreationTracker >= SecondVirus)
+            {
+                Window.virus02.autoMovement();
+            }
+            if (VirusCreationTracker >= ThirdVirus)
+            {
+                Window.virus03.autoMovement();
+            }
+            if (VirusCreationTracker >= FourthVirus)
+            {
+                Window.virus04.autoMovement();
+            }
+            if (VirusCreationTracker >= FifthVirus)
+            {
+                Window.virus05.autoMovement();
+            }
+         
 
-
-            Window.displayMovements();
+            Window.displayMovements(VirusCreationTracker);
             VirusCreationTracker++;
         }
 }
+
