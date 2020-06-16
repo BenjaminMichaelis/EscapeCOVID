@@ -9,9 +9,11 @@ void gameInstance() {
         Window.createWindow();
         int VirusCreationTracker = 0;
         Vector2f playerPos, virusPos;
+        bool collision = false;
         // run the game while window stays open:
-        while (Window.window.isOpen())
+        while (Window.window.isOpen() && collision == false)
         {
+            collision = Window.checkCollision(VirusCreationTracker);
 
             if (VirusCreationTracker == FirstVirus)
             {
