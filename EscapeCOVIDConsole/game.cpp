@@ -3,35 +3,50 @@
 #include "virusObj.h"
 #include "Graphics.h"
 
-void gameInstance() {
-        Graphics W1;
-        W1.createWindow();
+enum VirusCreation {FirstVirus, SecondVirus = 300, ThirdVirus = 600, FourthVirus = 900, FifthVirus = 1200};
 
+void gameInstance() {
+        Graphics Window;
+        Window.createWindow();
+        int VirusCreationTracker = 0;
         Vector2f playerPos, virusPos;
         // run the game while window stays open:
-        while (W1.window.isOpen())
+        while (Window.window.isOpen())
         {
-            W1.closeWindow();
+            if (VirusCreationTracker == FirstVirus)
+            {
+                Window.virus01.CreateVirusOBJ(Window.player);
+            }
+            if (VirusCreationTracker == SecondVirus)
+            {
+                Window.virus02.CreateVirusOBJ(Window.player);
+            }
+            Window.player.getSprite().getPosition().x;
+            Window.virus01.getSprite().getPosition().x;
+
+
+            Window.closeWindow();
             // main game loop, i.e. all movements and interactions go below this line:
             // player movement controls:
             if (Keyboard::isKeyPressed(Keyboard::Left)) {
-                W1.player.moveLeft();
+                Window.player.moveLeft();
             }
             if (Keyboard::isKeyPressed(Keyboard::Right)) {
-                W1.player.moveRight();
+                Window.player.moveRight();
             }
             if (Keyboard::isKeyPressed(Keyboard::Up)) {
-                W1.player.moveUp();
+                Window.player.moveUp();
             }
             if (Keyboard::isKeyPressed(Keyboard::Down)) {
-                W1.player.moveDown();
+                Window.player.moveDown();
             }
 
             // virus auto-movement:
-            W1.virus01.autoMovement();
-            W1.virus02.autoMovement();
+            Window.virus01.autoMovement();
+            Window.virus02.autoMovement();
 
 
-            W1.displayMovements();
+            Window.displayMovements();
+            VirusCreationTracker++;
         }
 }
