@@ -3,8 +3,8 @@
 
 Graphics::Graphics()
 {
-    virus01.CreateVirusOBJ(player);
-    virus02.CreateVirusOBJ(player);
+    //virus01.CreateVirusOBJ(player);
+    //virus02.CreateVirusOBJ(player);
     font.loadFromFile("Tuffy.ttf");
 }
 
@@ -20,13 +20,31 @@ void Graphics::createWindow()//right now this function just opens a window, adds
     window.display();//display frame
 }
 
-void Graphics::displayMovements()
+void Graphics::displayMovements(int VirusCreationTracker)
 {
     // display movement changes:
     window.clear(Color(COLORRED, COLORGREEN, COLORBLUE, COLORALPHA));
 
-    window.draw(virus01.getSprite());
-    window.draw(virus02.getSprite());
+    if (VirusCreationTracker >= FirstVirus)
+    {
+        window.draw(virus01.getSprite());
+    }
+    if (VirusCreationTracker >= SecondVirus)
+    {
+        window.draw(virus02.getSprite());
+    }
+    if (VirusCreationTracker >= ThirdVirus)
+    {
+        window.draw(virus03.getSprite());
+    }
+    if (VirusCreationTracker >= FourthVirus)
+    {
+        window.draw(virus04.getSprite());
+    }
+    if (VirusCreationTracker >= FifthVirus)
+    {
+        window.draw(virus05.getSprite());
+    }
 
     window.draw(player.getSprite());
 
