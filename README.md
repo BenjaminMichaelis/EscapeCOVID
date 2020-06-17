@@ -1,6 +1,5 @@
 # EscapeCOVID
 
-![C/C++ with Make](https://github.com/BenjaminMichaelis/EscapeCOVID/workflows/C/C++%20with%20Make/badge.svg?branch=master)
 <p align="left" >
         <a href="https://github.com/benjaminmichaelis/EscapeCOVID">
         <img src="https://img.shields.io/github/contributors/BenjaminMichaelis/EscapeCovid" alt="Number of Contributors" />
@@ -25,4 +24,5 @@ Jared Campbell<br />
 Teddie Hovanec<br />
 Karl Norden<br />
 
-
+# Game Play
+Run the game, and move the player around using the arrow keys to escape the "viruses" as long as you can.
