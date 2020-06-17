@@ -67,24 +67,28 @@ void VirusOBJ::autoMovement()
     // bounce-back behaviors when hitting walls for the virus object:
     if (pos.x < 0) 
     {
+        sound.wallHit();//play virus wall collide sound
         dx = DEFAULT_SPEED;
         dy = randSpeed(DEFAULT_SPEED);
     }
 
     if (pos.x > float(FRAMEX)) 
     {
+        sound.wallHit();//play virus wall collide sound
         dx = -DEFAULT_SPEED;
         dy = randSpeed(DEFAULT_SPEED);
     }
 
     if (pos.y < 0) 
     {
+        sound.wallHit();//play virus wall collide sound
         dx = randSpeed(DEFAULT_SPEED);
         dy = DEFAULT_SPEED;
     }
 
     if (pos.y > float(FRAMEY)) 
     {
+        sound.wallHit();//play virus wall collide sound
         dx = randSpeed(DEFAULT_SPEED);
         dy = -DEFAULT_SPEED;
     }

@@ -158,12 +158,14 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="playerObj.cpp" />
+    <ClCompile Include="Sound.cpp" />
     <ClCompile Include="virusObj.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="playerObj.h" />
     <ClInclude Include="rootheader.h" />
+    <ClInclude Include="Sound.h" />
     <ClInclude Include="Sprites.h" />
     <ClInclude Include="virusObj.h" />
     <ClInclude Include="Score.h" />

@@ -6,6 +6,7 @@
 #include "playerObj.h"
 #include "virusObj.h"
 #include "Score.h"
+#include "Sound.h"
 #include <string>
 
 using namespace sf;
@@ -22,6 +23,8 @@ private:
     Score S1;//create score object
     Text text;
     Font font;
+    SFX sound;
+
 
 public:
     RenderWindow window;//build window
