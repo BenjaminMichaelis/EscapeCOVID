@@ -72,14 +72,6 @@ bool Graphics::checkCollision(int VirusCreationTracker)
 
     int playerY2;
 
-    virusX1 = virus01.getSprite().getPosition().x;//left side of virus
-
-    virusX2 = virus01.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
-
-    virusY1 = virus01.getSprite().getPosition().y;//top of virus
-
-    virusY2 = virus01.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
-
     playerX1 = player.getSprite().getPosition().x;//player left side
 
     playerX2 = player.getSprite().getPosition().x + PLAYER_W;//player right side
@@ -91,6 +83,14 @@ bool Graphics::checkCollision(int VirusCreationTracker)
  
     if (VirusCreationTracker >= FirstVirus)
     {
+        virusX1 = virus01.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus01.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus01.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus01.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
         if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
         {
             if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
@@ -101,19 +101,67 @@ bool Graphics::checkCollision(int VirusCreationTracker)
     }
     if (VirusCreationTracker >= SecondVirus)
     {
-        window.draw(virus02.getSprite());
+        virusX1 = virus02.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus02.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus02.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus02.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
+            {
+                return true;
+            }
+        }
     }
     if (VirusCreationTracker >= ThirdVirus)
     {
-        window.draw(virus03.getSprite());
+        virusX1 = virus03.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus03.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus03.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus03.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
+            {
+                return true;
+            }
+        }
     }
     if (VirusCreationTracker >= FourthVirus)
     {
-        window.draw(virus04.getSprite());
+        virusX1 = virus04.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus04.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus04.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus04.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
     }
     if (VirusCreationTracker >= FifthVirus)
     {
-        window.draw(virus05.getSprite());
+        virusX1 = virus05.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus05.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus05.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus05.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
+            {
+                return true;
+            }
+        }
     }
 
     return false;
