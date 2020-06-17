@@ -17,6 +17,8 @@
         <img src="https://img.shields.io/github/license/BenjaminMichaelis/EscapeCOVID" alt="License" />
     </a>
     
+Link to GitHub Repo: https://github.com/BenjaminMichaelis/EscapeCOVID
+
 CPTS122-01
 
 Benjamin Michaelis<br />
