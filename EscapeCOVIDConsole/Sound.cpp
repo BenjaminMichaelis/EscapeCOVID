@@ -2,19 +2,19 @@
 
 SFX::SFX()
 {
-	playerDie.loadFromFile("sfx/gameOver.wav");
-	gameOver.setBuffer(playerDie);
+    playerDie.loadFromFile("sfx/gameOver.wav");
+    gameOver.setBuffer(playerDie);
 
-	wallCollide.loadFromFile("sfx/wallCollide.wav");
-	collide.setBuffer(wallCollide);
+    wallCollide.loadFromFile("sfx/wallCollide.wav");
+    collide.setBuffer(wallCollide);
 }
 
 void SFX::playerHit()
 {
-	gameOver.play();
+    gameOver.play();
 }
 
 void SFX::wallHit()
 {
-	collide.play();
+    collide.play();
 }
