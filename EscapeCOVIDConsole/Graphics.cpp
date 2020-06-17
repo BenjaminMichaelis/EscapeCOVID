@@ -3,8 +3,6 @@
 
 Graphics::Graphics()
 {
-    //virus01.CreateVirusOBJ(player);
-    //virus02.CreateVirusOBJ(player);
     font.loadFromFile("Tuffy.ttf");
 }
 
@@ -95,6 +93,7 @@ bool Graphics::checkCollision(int VirusCreationTracker)
         {
             if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
+                sound.playerHit();//play player death sound
                 return true;//collision detected
             }
         }
@@ -113,6 +112,7 @@ bool Graphics::checkCollision(int VirusCreationTracker)
         {
             if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
+                sound.playerHit();//play player death sound
                 return true;//collision detected
             }
         }
@@ -131,6 +131,7 @@ bool Graphics::checkCollision(int VirusCreationTracker)
         {
             if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
+                sound.playerHit();//play player death sound
                 return true;//collision detected
             }
         }
@@ -149,6 +150,7 @@ bool Graphics::checkCollision(int VirusCreationTracker)
         {
             if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
+                sound.playerHit();//play player death sound
                 return true;//collision detected
             }
         }
@@ -167,6 +169,7 @@ bool Graphics::checkCollision(int VirusCreationTracker)
         {
             if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
+                sound.playerHit();//play player death sound
                 return true;//collision detected
             }
         }
@@ -187,3 +190,7 @@ void Graphics::closeWindow()
         }
 }
 
+void Graphics::reset()
+{
+    S1.resetScore();
+}

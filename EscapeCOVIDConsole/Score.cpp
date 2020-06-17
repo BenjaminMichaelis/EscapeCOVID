@@ -11,3 +11,10 @@ int Score::updateScore()//every time this function is called, update score
 
     return timer;//return time
 }
+
+void Score::resetScore()
+{
+    score = clock();
+
+    
+}

@@ -2,10 +2,12 @@
 #define VIRUSOBJ_H
 #include "playerObj.h"
 #include "rootheader.h"
+#include "Sound.h"
 
 class VirusOBJ : public PlayerOBJ {
   protected:
     sf::Vector2f playerPos;
+    SFX sound;
 
   public:
     // constructor (virus must be created with reference to the player):

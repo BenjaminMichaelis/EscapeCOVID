@@ -16,6 +16,7 @@ class Score
 
         int updateScore();//update score
 
+        void resetScore();//reset score on death
 };
 
 
