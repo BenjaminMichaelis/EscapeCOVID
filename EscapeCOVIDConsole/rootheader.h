@@ -22,7 +22,7 @@ const int FRAME_LENGTH = 400;
 
 // default starting location for the player sprite:
 const int PLAYER_DEFAULT_X = 150;
-const int PLAYER_DEFAULT_Y = 150;
+const int PLAYER_DEFAULT_Y = 200;
 
 // default moving speed:
 const int DEFAULT_SPEED = 5;

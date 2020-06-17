@@ -91,9 +91,9 @@ bool Graphics::checkCollision(int VirusCreationTracker)
  
     if (VirusCreationTracker >= FirstVirus)
     {
-        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX2 && virusX2 >= playerX1))
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
         {
-            if ((virusY1 >= playerY2 && virusY1 <= playerY1) || (virusY2 <= playerY1 && virusY2 >= playerY2))
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
             {
                 return true;
             }
