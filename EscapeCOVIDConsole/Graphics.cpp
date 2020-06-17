@@ -91,11 +91,11 @@ bool Graphics::checkCollision(int VirusCreationTracker)
 
         virusY2 = virus01.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
 
-        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
         {
-            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
-                return true;
+                return true;//collision detected
             }
         }
     }
@@ -109,11 +109,11 @@ bool Graphics::checkCollision(int VirusCreationTracker)
 
         virusY2 = virus02.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
 
-        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
         {
-            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
-                return true;
+                return true;//collision detected
             }
         }
     }
@@ -127,11 +127,11 @@ bool Graphics::checkCollision(int VirusCreationTracker)
 
         virusY2 = virus03.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
 
-        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
         {
-            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
-                return true;
+                return true;//collision detected
             }
         }
     }
@@ -144,6 +144,14 @@ bool Graphics::checkCollision(int VirusCreationTracker)
         virusY1 = virus04.getSprite().getPosition().y;//top of virus
 
         virusY2 = virus04.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
+            {
+                return true;//collision detected
+            }
+        }
     }
     if (VirusCreationTracker >= FifthVirus)
     {
@@ -155,11 +163,11 @@ bool Graphics::checkCollision(int VirusCreationTracker)
 
         virusY2 = virus05.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
 
-        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
         {
-            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 >= playerY1 && virusY2 <= playerY2))
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
             {
-                return true;
+                return true;//collision detected
             }
         }
     }
