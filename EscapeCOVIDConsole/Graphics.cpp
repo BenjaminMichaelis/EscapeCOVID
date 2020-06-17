@@ -3,8 +3,6 @@
 
 Graphics::Graphics()
 {
-    //virus01.CreateVirusOBJ(player);
-    //virus02.CreateVirusOBJ(player);
     font.loadFromFile("Tuffy.ttf");
 }
 
@@ -192,3 +190,7 @@ void Graphics::closeWindow()
         }
 }
 
+void Graphics::reset()
+{
+    S1.resetScore();
+}

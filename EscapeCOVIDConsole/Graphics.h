@@ -45,6 +45,8 @@ public:
 
     bool checkCollision(int VirusCreationTracker);
 
+    void reset();
+
 };
 
 

@@ -77,12 +77,16 @@ void gameInstance() {
 
 
                 Window.displayMovements(VirusCreationTracker);
+
                 VirusCreationTracker++;
+
+                Window.closeWindow();
             }
             if (Keyboard::isKeyPressed(Keyboard::Enter))
             {
                 collision = false;
-                Graphics Window;
+                Window.reset();
+                VirusCreationTracker = 0;
             }
             Window.closeWindow();
         }   
