@@ -40,6 +40,8 @@ public:
     void closeWindow();
     void displayMovements(int VirusCreationTracker);
 
+    bool checkCollision(int VirusCreationTracker);
+
 };
 
 

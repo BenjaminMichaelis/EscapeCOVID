@@ -9,10 +9,10 @@ void gameInstance() {
         Window.createWindow();
         int VirusCreationTracker = 0;
         Vector2f playerPos, virusPos;
+        bool collision = false;
         // run the game while window stays open:
-        while (Window.window.isOpen())
+        while (Window.window.isOpen() && collision == false)
         {
-
             if (VirusCreationTracker == FirstVirus)
             {
                 Window.virus01.CreateVirusOBJ(Window.player);
@@ -36,6 +36,7 @@ void gameInstance() {
             //Window.player.getSprite().getPosition().x;
             //Window.virus01.getSprite().getPosition().x;
 
+            collision = Window.checkCollision(VirusCreationTracker);
 
             Window.closeWindow();
             // main game loop, i.e. all movements and interactions go below this line:

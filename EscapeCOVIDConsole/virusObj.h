@@ -18,7 +18,7 @@ class VirusOBJ : public PlayerOBJ {
     void autoMovement();
 
     // destructor:
-    ~VirusOBJ() { delete this; }
+    //~VirusOBJ() { delete this; }
 };
 
 // non-member function to randomize the speed:

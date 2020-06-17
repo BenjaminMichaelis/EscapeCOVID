@@ -54,6 +54,127 @@ void Graphics::displayMovements(int VirusCreationTracker)
     window.display();
 }
 
+bool Graphics::checkCollision(int VirusCreationTracker)
+{
+    int virusX1;
+
+    int virusX2;
+
+    int virusY1;
+
+    int virusY2;
+
+    int playerX1;
+
+    int playerX2;
+
+    int playerY1;
+
+    int playerY2;
+
+    playerX1 = player.getSprite().getPosition().x;//player left side
+
+    playerX2 = player.getSprite().getPosition().x + PLAYER_W;//player right side
+
+    playerY1 = player.getSprite().getPosition().y;//player top side
+
+    playerY2 = player.getSprite().getPosition().y - PLAYER_H;//player bottom side
+
+ 
+    if (VirusCreationTracker >= FirstVirus)
+    {
+        virusX1 = virus01.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus01.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus01.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus01.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
+            {
+                return true;//collision detected
+            }
+        }
+    }
+    if (VirusCreationTracker >= SecondVirus)
+    {
+        virusX1 = virus02.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus02.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus02.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus02.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
+            {
+                return true;//collision detected
+            }
+        }
+    }
+    if (VirusCreationTracker >= ThirdVirus)
+    {
+        virusX1 = virus03.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus03.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus03.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus03.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
+            {
+                return true;//collision detected
+            }
+        }
+    }
+    if (VirusCreationTracker >= FourthVirus)
+    {
+        virusX1 = virus04.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus04.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus04.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus04.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
+            {
+                return true;//collision detected
+            }
+        }
+    }
+    if (VirusCreationTracker >= FifthVirus)
+    {
+        virusX1 = virus05.getSprite().getPosition().x;//left side of virus
+
+        virusX2 = virus05.getSprite().getPosition().x + VIRUS_SIZE;//right side of virus
+
+        virusY1 = virus05.getSprite().getPosition().y;//top of virus
+
+        virusY2 = virus05.getSprite().getPosition().y - VIRUS_SIZE;//bottom of virus
+
+        if ((virusX1 >= playerX1 && virusX1 <= playerX2) || (virusX2 <= playerX1 && virusX2 >= playerX2))//if either side of virus overlaps either side of player
+        {
+            if ((virusY1 <= playerY1 && virusY1 >= playerY2) || (virusY2 <= playerY1 && virusY2 >= playerY2))//if top or bottom of virus overlaps top or bottom of player
+            {
+                return true;//collision detected
+            }
+        }
+    }
+
+    return false;
+}
+
 void Graphics::closeWindow()
 {
         // terminate the game if window is closed:
@@ -65,3 +186,4 @@ void Graphics::closeWindow()
             }
         }
 }
+

@@ -22,7 +22,7 @@ class PlayerOBJ {
     void moveDown();
 
     // destructor:
-    ~PlayerOBJ() { delete this; }
+   // ~PlayerOBJ() { delete this; }
 };
 
 #endif
