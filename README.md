@@ -27,4 +27,5 @@ Teddie Hovanec<br />
 Karl Norden<br />
 
 # Game Play
-Run the game, and move the player around using the arrow keys to escape the "viruses" as long as you can.
+Run the game, and move the player around using the arrow keys to escape the "viruses" as long as you can.<br />
+The ENTER key resets the game after you git hit by a virus and to end the game, simply exit out of the game window.
