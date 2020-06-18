@@ -26,6 +26,19 @@ Jared Campbell<br />
 Teddie Hovanec<br />
 Karl Norden<br />
 
-# Game Play
-After running the game, move the player around using the arrow keys to escape the "viruses" as long as you can.<br />
-The ENTER key resets the game after you git hit by a virus and to end the game, simply exit out of the game window.
+# Gameplay Demo Instructions:
+Compile and run the program. The game starts out with one virus and one by one up to 5 viruses will be spawned.
+
+# Control instructions:
+- Use the ARROW keys to control the Player that spawns in the middle of the screen.<br />
+- Control the Player to avoid the viruses for as long as you can.
+- Hit the ENTER key to reset the game if you are hit by a virus.
+- To end the game, simply close the game window.
+
+# The following critera are tested successfully in the Demo:
+1. Player successfully collides with and is stopped by four walls.
+2. All 5 Viruses spawn successfully at random locations without colliding with the player.
+3. All 5 Viruses successfully collides with the walls and subsequently change their trajectory.
+4. All 5 Viruses successfully collide with the Player and subsequently stop/pause the game.
+5. The Elapsed Time Counter successfully resets at each Player-Virus collision.
+6. Successful implementation of the Sound Effects.
