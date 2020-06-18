@@ -37,8 +37,9 @@ Compile and run the program. The game starts out with one virus and one by one u
 
 # The following critera are tested successfully in the Demo:
 1. Player successfully collides with and is stopped by four walls.
-2. All 5 Viruses spawn successfully at random locations without colliding with the player.
+2. All 5 Viruses spawn successfully at random locations without colliding with the player initially upon creation.
 3. All 5 Viruses successfully collides with the walls and subsequently change their trajectory.
 4. All 5 Viruses successfully collide with the Player and subsequently stop/pause the game.
 5. The Elapsed Time Counter successfully resets at each Player-Virus collision.
 6. Successful implementation of the Sound Effects.
+7. Exiting out the game window successfully shuts down the game.
