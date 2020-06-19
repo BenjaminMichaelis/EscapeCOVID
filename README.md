@@ -1,5 +1,6 @@
 # EscapeCOVID
 
+![C/C++ CI](https://github.com/BenjaminMichaelis/EscapeCOVID/workflows/C/C++%20CI/badge.svg?branch=master)
 <p align="left" >
         <a href="https://github.com/benjaminmichaelis/EscapeCOVID">
         <img src="https://img.shields.io/github/contributors/BenjaminMichaelis/EscapeCovid" alt="Number of Contributors" />
