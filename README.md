@@ -1,4 +1,6 @@
 # EscapeCOVID
+A simple C++ and SFML based player escape from virus object game
+
 
 ![C/C++ CI](https://github.com/BenjaminMichaelis/EscapeCOVID/workflows/C/C++%20CI/badge.svg?branch=master)
 <p align="left" >
