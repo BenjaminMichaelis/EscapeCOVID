@@ -20,14 +20,6 @@ A simple C++ and SFML based player escape from virus object game
         <img src="https://img.shields.io/github/license/BenjaminMichaelis/EscapeCOVID" alt="License" />
     </a>
     
-Link to GitHub Repo: https://github.com/BenjaminMichaelis/EscapeCOVID
-
-CPTS122-01
-
-Benjamin Michaelis<br />
-Jared Campbell<br />
-Teddie Hovanec<br />
-Karl Norden<br />
 
 # Gameplay Demo Instructions:
 Compile and run the program. The game starts out with one virus and one by one up to 5 viruses will be spawned.
