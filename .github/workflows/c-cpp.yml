@@ -2,19 +2,27 @@ name: C/C++ CI
 
 on:
   push:
-    branches: [master]
+    branches:
+      - '*'
   pull_request:
     branches: [master]
+    #allows for running at anytime from button
+  workflow_dispatch:
+
 
 jobs:
   build:
+    name: Build the project with makefile
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: make
-        run: echo $PWD && make
-      - name: make check
-        run: make check
-      - name: make distcheck
-        run: make distcheck
+        - name: Display the path
+          run: echo $PATH
+          shell: bash
+        # step 1: checkout repository code inside the workspace directory of the runner
+        - name: Checkout the repository
+          uses: actions/checkout@v2
+        - name: Display the current directory
+          run: echo $PWD
+        - name: make
+          run: make
