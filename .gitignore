@@ -1,5 +1,4 @@
 # Build system
-bin
 build
 gmon.out
 *.stats
