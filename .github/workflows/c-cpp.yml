@@ -14,7 +14,6 @@ jobs:
   build:
     name: Build the project with makefile
     runs-on: ubuntu-latest
-
     steps:
         - name: Display the path
           run: echo $PATH
@@ -25,4 +24,4 @@ jobs:
         - name: Display the current directory
           run: echo $PWD
         - name: make
-          run: make
+          run: make makebuild
