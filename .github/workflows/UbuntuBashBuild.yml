@@ -12,6 +12,12 @@ on:
     branches: [ master ]
   #allows for running at anytime from button
   workflow_dispatch:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
