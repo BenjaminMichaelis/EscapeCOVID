@@ -12,6 +12,7 @@ on:
     branches: [ master ]
   #allows for running at anytime from button
   workflow_dispatch:
+    inputs:
       logLevel:
         description: 'Log level'     
         required: true
