@@ -1,4 +1,4 @@
-name: Linux Make Build
+name: Ubuntu Make Build
 
 on:
   push:
@@ -9,10 +9,9 @@ on:
     #allows for running at anytime from button
   workflow_dispatch:
 
-
 jobs:
   build:
-    name: Build the project with makefile
+    name: Build project with Ubuntu Makefile
     runs-on: ubuntu-latest
     steps:
         - name: Display the path
@@ -21,7 +20,10 @@ jobs:
         # step 1: checkout repository code inside the workspace directory of the runner
         - name: Checkout the repository
           uses: actions/checkout@v2
+        - name: Install Linux Dependencies
+          run: sudo apt-get update && sudo apt-get install libsfml-dev libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev
         - name: Display the current directory
           run: echo $PWD
+
         - name: make
           run: make makebuild

@@ -1,8 +1,8 @@
 # EscapeCOVID
 A simple C++ and SFML based player escape from virus object game
 
-
-![C/C++ CI](https://github.com/BenjaminMichaelis/EscapeCOVID/workflows/C/C++%20CI/badge.svg?branch=master)
+[![Ubuntu Bash Build](https://github.com/BenjaminMichaelis/EscapeCOVID/actions/workflows/UbuntuBashBuild.yml/badge.svg?branch=master)](https://github.com/BenjaminMichaelis/EscapeCOVID/actions/workflows/UbuntuBashBuild.yml)
+[![Ubuntu Make Build](https://github.com/BenjaminMichaelis/EscapeCOVID/actions/workflows/UbuntuMakeBuild.yml/badge.svg?branch=master)](https://github.com/BenjaminMichaelis/EscapeCOVID/actions/workflows/UbuntuMakeBuild.yml)
 <p align="left" >
         <a href="https://github.com/benjaminmichaelis/EscapeCOVID">
         <img src="https://img.shields.io/github/contributors/BenjaminMichaelis/EscapeCovid" alt="Number of Contributors" />
