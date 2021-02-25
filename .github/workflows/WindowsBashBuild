@@ -1,0 +1,22 @@
+name: Windows Bash Build
+
+on:
+  push:
+    branches:
+      -  '*'
+  pull_request:
+    branches: [ master ]
+  #allows for running at anytime from button
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Build project
+        run: bash build.sh build
+        shell: bash
