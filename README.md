@@ -38,3 +38,37 @@ Compile and run the program. The game starts out with one virus and one by one u
 5. The Elapsed Time Counter successfully resets at each Player-Virus collision.
 6. Successful implementation of the Sound Effects.
 7. Exiting out the game window successfully shuts down the game.
+
+        
+## Build Without VS Code (experimental)
+
+If you have a reason to build your project without Code (on Raspbian or something), you can run build.sh the following way:
+
+1. Use any bash terminal (Git Bash if Windows).
+2. Run a variation of the following:
+
+```
+bash build.sh (build|buildrun|rebuild|run|buildprod|profile) (Debug|Release) (executable commmand line options)
+```
+
+For instance, to build & run the Release build, you'd use:
+
+```
+bash build.sh buildrun Release
+```
+
+If you run the script without any parameters, it's the same as the following:
+
+```
+bash build.sh buildprod Release
+```
+
+To build & run the unit tests, use:
+
+```
+bash build.sh buildrun Tests vscode '-w NoTests -s'
+```
+
+(The last parameter contains Catch2 command line options)
+
+If the build mode is not Debug or Release, it will default to Release. If you need to, change the "Path" variables within the build.sh file in the "if [[$VSCODE != 'vscode']] ; then" block.
